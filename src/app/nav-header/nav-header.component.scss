@@ -94,4 +94,32 @@
       margin: 0;
     }
   }
-  
+  .gen-menu-search-block {
+    position: relative; /* Or position: absolute if you want it to be fixed */
+    top: 0; /* Ensure it's positioned at the top */
+    margin-top: 0; /* Remove any unwanted space above */
+}
+
+.gen-search-form {
+    position: absolute;
+    top: 0; /* Ensure it's aligned at the top of the parent */
+    width: 100%; /* Optional: Ensure the form is full width */
+}
+.gen-menu-search-block {
+  margin-top: 0; /* Reset any margin pushing the box down */
+  padding-top: 0; /* Reset any padding at the top */
+}
+
+.gen-search-form {
+  margin-top: 0; /* Ensure the form itself has no extra top margin */
+  padding-top: 0;
+}
+.gen-menu-search-block {
+  display: flex;
+  justify-content: flex-start; /* Align it to the start (left) */
+  align-items: center; /* Vertically center it within the container */
+}
+
+.gen-search-form {
+  margin-top: 0; /* Reset any margin causing the shift */
+}

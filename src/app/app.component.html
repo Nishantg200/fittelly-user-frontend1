@@ -1,9 +1,7 @@
-<!-- Loader (conditionally displayed when loading is true) -->
-<app-loader *ngIf="loading"></app-loader>  <!-- This will display the loader -->
 
 <!-- Mobile View (only shown if it's mobile) -->
 <div *ngIf="mobile">
-  <router-outlet></router-outlet> <!-- Content displayed here -->
+  <!-- <router-outlet></router-outlet> Content displayed here -->
   <app-nav-header *ngIf="!isAuthenticationPage()"></app-nav-header> <!-- Mobile-specific header -->
 </div>
 
@@ -16,6 +14,6 @@
 <router-outlet></router-outlet> <!-- Main content goes here -->
 
 <!-- Footer (only shown if it's desktop and not login/register) -->
-<div *ngIf="!mobile && showFotter && !isAuthenticationPage()">
-  <app-fotter></app-fotter> <!-- Desktop-specific footer -->s
+<div *ngIf=" !isAuthenticationPage()">
+  <app-fotter></app-fotter> <!-- Desktop-specific footer -->
 </div>
