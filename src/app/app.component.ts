@@ -4,7 +4,8 @@ import { Router, NavigationStart, NavigationEnd, NavigationError, RouterOutlet }
 import { HeaderComponent } from './header/header.component';
 import { FotterComponent } from './fotter/fotter.component';
 import { NavHeaderComponent } from './nav-header/nav-header.component';
-import { LoaderComponent } from './loader/loader.component'; // Import the loader component
+import { LoaderComponent } from './loader/loader.component';
+import { NavHeaderTopComponent } from "./nav-header-top/nav-header-top.component"; // Import the loader component
 
 @Component({
   selector: 'app-root',
@@ -15,8 +16,8 @@ import { LoaderComponent } from './loader/loader.component'; // Import the loade
     CommonModule,
     FotterComponent,
     NavHeaderComponent,
-    LoaderComponent // Import the loader component here
-  ],
+    NavHeaderTopComponent
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

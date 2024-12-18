@@ -1,6 +1,7 @@
 
 <!-- Mobile View (only shown if it's mobile) -->
 <div *ngIf="mobile">
+  <app-nav-header-top></app-nav-header-top>
   <!-- <router-outlet></router-outlet> Content displayed here -->
   <app-nav-header *ngIf="!isAuthenticationPage()"></app-nav-header> <!-- Mobile-specific header -->
 </div>
