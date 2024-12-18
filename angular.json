@@ -33,7 +33,10 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "dist/browser/css/bootstrap.min.css",
+               "dist/browser/css/responsive.css",
+                "dist/browser/css/style.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
