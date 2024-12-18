@@ -1,0 +1,22 @@
+{
+  "routes": [
+    "/",
+    "/daily-class",
+    "/fit-arena",
+    "/fit-care",
+    "/fit-casts",
+    "/fit-expert-live",
+    "/fit-fuel",
+    "/fit-guid",
+    "/fit-training",
+    "/fit-well",
+    "/hiit",
+    "/login",
+    "/meditation",
+    "/register",
+    "/strength",
+    "/subscribe",
+    "/yoga",
+    "/zumba"
+  ]
+}

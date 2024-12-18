@@ -1,0 +1,40 @@
+// .left-side-page {
+//   margin-left: calc(calc(calc(32px - 2px) * 2 + 8px * 2 + 20px) + 12px);
+//   width: 100%;
+// }
+
+/* Desktop View */
+// .left-side-page {
+//     margin-left: calc(calc(calc(32px - 2px) * 2 + 8px * 2 + 20px) + 12px);
+//     // width: 100vw;
+//   }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .header-desktop {
+      display: none;
+    }
+  
+    .mobile-view {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    /* Bottom Navbar styling for mobile view */
+    app-nav-header {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 10;
+    }
+  }
+  
+  /* Hide the bottom navbar on desktop view */
+  @media (min-width: 769px) {
+    app-nav-header {
+      display: none;
+    }
+  }
+  
